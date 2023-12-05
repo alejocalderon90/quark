@@ -20,13 +20,13 @@ p {
   margin-bottom: 0; }
 
 .active {
-  color: #f8d020; }
+  color: #e4ba02; }
 
 .line {
-  color: #f8d020; }
+  color: #e4ba02; }
 
 .nuestrosClientes {
-  background-color: #f8d020; }
+  background-color: #e4ba02; }
 
 .header {
   width: 100%;
@@ -42,11 +42,10 @@ p {
     align-items: center; }
     .header__nav__logo {
       height: 100%;
-      width: 30%;
-      padding: 15px; }
+      width: 33%; }
     .header__nav__ul {
       padding-top: 90px;
-      width: 70%;
+      width: 65%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -61,6 +60,15 @@ p {
           font-size: 1.2rem;
           color: #5b5b5b; }
 
+.navbar {
+  display: none; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .carousel-caption {
   top: 0;
   bottom: 0;
@@ -71,23 +79,29 @@ p {
   background-size: cover;
   font-weight: bolder;
   font-size: 1.5rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  animation: fadein 5s;
+  transition: all .3s ease-in; }
 
 .servicios {
-  height: 800px;
+  height: 100%;
+  padding: 0 80px 150px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%; }
   .servicios__title {
     width: 100%;
-    position: absolute;
-    top: 595px;
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
     .servicios__title h1 {
-      font-size: 15rem;
+      font-size: 13rem;
       font-weight: bolder;
       color: #d4d4d4;
       font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +109,6 @@ p {
       padding: 0;
       letter-spacing: 5px; }
   .servicios__inner {
-    padding: 0 100px 0 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -105,32 +118,39 @@ p {
     .servicios__inner__each {
       width: 50%;
       height: 100%;
-      border-right: 2px solid #f8d020;
-      padding-right: 30px; }
+      border-right: 2px solid #e4ba02;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start; }
       .servicios__inner__each__flex {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        padding-bottom: 20px; }
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        width: 100%; }
         .servicios__inner__each__flex span {
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          border: 2px solid #f8d020;
-          margin-right: 10px; }
+          border: 2px solid #e4ba02;
+          margin-right: 10px;
+          margin-top: 8px; }
         .servicios__inner__each__flex p {
           font-size: 1.5rem;
           color: #2d2d2d;
           font-weight: 600;
           font-family: Arial, Helvetica, sans-serif;
-          margin: 0; }
+          margin: 0;
+          width: 80%; }
     .servicios__inner__text {
       width: 50%;
       height: 100%;
       font-size: 1.5rem;
-      padding-left: 30px; }
+      padding-left: 40px; }
       .servicios__inner__text p {
         font-weight: 600; }
 
@@ -142,9 +162,12 @@ p {
   height: 1000px; }
   .nosotras__title {
     width: 100%;
-    position: absolute;
     text-align: center;
-    top: 1400px; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
     .nosotras__title h2 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14.8rem;
@@ -156,7 +179,6 @@ p {
     background: rgba(255, 255, 255, 0.763);
     float: right;
     margin-right: 5px;
-    margin-top: 180px;
     padding: 20px; }
     .nosotras__box__text {
       text-align: center;
@@ -175,12 +197,15 @@ p {
 
 .politicas {
   width: 100%;
-  height: 800px; }
+  height: 100%; }
   .politicas__title {
     width: 100%;
     text-align: center;
-    position: absolute;
-    top: 2420px; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
     .politicas__title h2 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 8rem;
@@ -214,7 +239,7 @@ p {
         .politicas__box__each__div__span {
           width: 40%;
           height: 50px;
-          border-bottom: 5px solid #f8d020; }
+          border-bottom: 5px solid #e4ba02; }
         .politicas__box__each__div__num {
           width: 40%;
           font-size: 7rem;
@@ -234,21 +259,31 @@ p {
         font-weight: bold;
         text-align: center; }
 
+@keyframes apear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .proyectos {
   width: 100%;
-  height: 800px; }
+  height: 100%; }
   .proyectos__title {
     width: 100%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 3200px; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
     .proyectos__title h2 {
       font-size: 13rem;
       font-weight: bolder;
-      color: rgba(255, 255, 255, 0.434); }
+      color: #d4d4d4; }
   .proyectos__gallery {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 150px); }
@@ -288,3 +323,216 @@ p {
       .proyectos__gallery__6:hover {
         opacity: 0.5;
         transition: all .3s; }
+
+.clientes {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #e4ba02; }
+  .clientes__title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .clientes__title h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      color: rgba(255, 255, 255, 0.21);
+      font-size: 7.5rem; }
+  .clientes__subtitle {
+    width: 100%; }
+    .clientes__subtitle h3 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3rem;
+      letter-spacing: 30px; }
+  .clientes__container {
+    width: 100%;
+    height: 100%;
+    padding: 30px 50px 100px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .clientes__container__1 {
+      height: 100%;
+      width: 40%;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .clientes__container__1__testimonio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        height: 100%; }
+        .clientes__container__1__testimonio__title {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center; }
+          .clientes__container__1__testimonio__title h4 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+            width: 100%; }
+        .clientes__container__1__testimonio__parrafo {
+          padding-bottom: 20px;
+          font-weight: bold; }
+        .clientes__container__1__testimonio__white {
+          color: white;
+          font-weight: bold; }
+    .clientes__container__2 {
+      height: 100%;
+      width: 40%;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .clientes__container__2__testimonio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px; }
+        .clientes__container__2__testimonio__title {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center; }
+          .clientes__container__2__testimonio__title h4 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+            width: 100%; }
+        .clientes__container__2__testimonio__parrafo {
+          padding-bottom: 20px;
+          font-weight: bold; }
+        .clientes__container__2__testimonio__white {
+          color: white;
+          font-weight: bold; }
+
+.span1 {
+  width: 50%;
+  height: 20px;
+  background-color: transparent;
+  border-top-right-radius: 15px;
+  border-top: 3px white solid; }
+
+.span2 {
+  width: 50%;
+  height: 20px;
+  background-color: transparent;
+  border-top-left-radius: 15px;
+  border-top: 3px white solid; }
+
+.contacto {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .contacto__title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .contacto__title h2 {
+      color: #d4d4d4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15rem;
+      font-weight: bolder; }
+  .contacto__cards {
+    padding: 100px 50px 50px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .contacto__cards__container {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .contacto__cards__container__align {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        .contacto__cards__container__align p {
+          width: 100%;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #5b5b5b;
+          padding-bottom: 10px; }
+        .contacto__cards__container__align a {
+          width: 100%;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #5b5b5b; }
+    .contacto__cards__middle {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-left: 2px #e4ba02 solid;
+      border-right: 2px #e4ba02 solid; }
+      .contacto__cards__middle__align {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px 0 30px; }
+        .contacto__cards__middle__align p {
+          width: 100%;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #5b5b5b;
+          padding-bottom: 10px; }
+        .contacto__cards__middle__align a {
+          width: 100%;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #5b5b5b; }
+
+.footer {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  background-color: #5b5b5b; }
+  .footer__c {
+    font-weight: bolder; }
