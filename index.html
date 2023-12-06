@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>ESTUDIO QUARK | Arquitectura</title>
 </head>
@@ -24,11 +25,11 @@
                 <a href=""><img src="./logo/estudioquark-logo.png" alt="Estudio Quark logo"></a>
             </div>
             <ul class="header__nav__ul">
-                <li class="header__nav__ul__li"><a href="">HOME</a></li>
-                <li class="header__nav__ul__li"><a href="">SERVICIOS</a></li>
-                <li class="header__nav__ul__li"><a href="">NOSOTRAS</a></li>
-                <li class="header__nav__ul__li"><a href="">PROYECTOS</a></li>
-                <li class="header__nav__ul__li"><a href="">CONTACTO</a></li>
+                <li class="header__nav__ul__li"><a href="#home">HOME</a></li>
+                <li class="header__nav__ul__li"><a href="#servicios">SERVICIOS</a></li>
+                <li class="header__nav__ul__li"><a href="#nosotras">NOSOTRAS</a></li>
+                <li class="header__nav__ul__li"><a href="#proyectos">PROYECTOS</a></li>
+                <li class="header__nav__ul__li"><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -60,7 +61,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="home" class="carousel">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -90,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="servicios">
+        <section id="servicios" class="servicios">
             <div class="servicios__title">
                 <h1>SERVICIOS</h1>
             </div>
@@ -129,6 +130,7 @@
                 </div>
             </div>
         </section>
+        <div id="nosotras"></div>
         <section class="nosotras">
             <div class="nosotras__title">
                 <h2>NOSOTRAS</h2>
@@ -201,30 +203,218 @@
                 </div>
             </div>
         </section>
-        <section class="proyectos">
+        <section id="proyectos" class="proyectos">
             <div class="proyectos__title">
                 <h2>PROYECTOS</h2>
             </div>
-            <div class="proyectos__gallery">
-                <div class="proyectos__gallery__1">
-                    <a href=""><img src="./proyectos/proyecto01.webp" alt="proyecto Quark"></a>
+            <div id="galeria" class="proyectos__gallery">
+                <a class="proyectos__gallery__1" href="#galeria1"><img src="./proyectos/proyecto01.webp"
+                        alt="proyecto Quark"></a>
+                <a class="proyectos__gallery__2" href="#galeria2"><img src="./proyectos/proyecto02.webp"
+                        alt="proyecto Quark"></a>
+                <a class="proyectos__gallery__3" href="#galeria3"><img src="./proyectos/proyecto03.webp"
+                        alt="proyecto Quark"></a>
+                <a class="proyectos__gallery__4" href="#galeria4"><img src="./proyectos/proyecto04.webp"
+                        alt="proyecto Quark"></a>
+                <a class="proyectos__gallery__5" href="#galeria5"><img src="./proyectos/proyecto05.webp"
+                        alt="proyecto Quark"></a>
+                <a class="proyectos__gallery__6" href="#galeria6"><img src="./proyectos/proyecto06.webp"
+                        alt="proyecto Quark"></a>
+            </div>
+        </section>
+        <section id="galeria1" class="lightbox">
+            <div class="lightbox__container">
+                <div class="lightbox__container__close">
+                    <a id="close" href="#galeria"><i class="bi bi-x-square-fill"></i></a>
                 </div>
-                <div class="proyectos__gallery__2">
-                    <a href=""><img src="./proyectos/proyecto02.webp" alt="proyecto Quark"></a>
+                <div class="lightbox__container__left">
+                    <a id="prev1" href="#galeria6"><i class="bi bi-arrow-left-square-fill"></i></a>
                 </div>
-                <div class="proyectos__gallery__3">
-                    <a href=""><img src="./proyectos/proyecto03.webp" alt="proyecto Quark"></a>
+                <div class="lightbox__container__img">
+                    <div class="lightbox__container__img__main">
+                        <img id="main1" class="mainImage" src="./proyectos/proyecto01.webp" alt="Proyecto Quark">
+                    </div>
+                    <div class="lightbox__container__img__gallery ">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-01.webp')" src="./proyectos/proyecto01-01.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-02.webp')" src="./proyectos/proyecto01-02.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-03.webp')" src="./proyectos/proyecto01-03.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-04.webp')" src="./proyectos/proyecto01-04.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-05.webp')" src="./proyectos/proyecto01-05.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-06.webp')" src="./proyectos/proyecto01-06.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-07.webp')" src="./proyectos/proyecto01-07.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-08.webp')" src="./proyectos/proyecto01-08.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-09.webp')" src="./proyectos/proyecto01-09.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01-10.webp')" src="./proyectos/proyecto01-10.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen1('./proyectos/proyecto01.webp')" src="./proyectos/proyecto01.webp" alt="Proyecto Quark">
+
+                    </div>
                 </div>
-                <div class="proyectos__gallery__4">
-                    <a href=""><img src="./proyectos/proyecto04.webp" alt="proyecto Quark"></a>
-                </div>
-                <div class="proyectos__gallery__5">
-                    <a href=""><img src="./proyectos/proyecto05.webp" alt="proyecto Quark"></a>
-                </div>
-                <div class="proyectos__gallery__6">
-                    <a href=""><img src="./proyectos/proyecto06.webp" alt="proyecto Quark"></a>
+                <div class="lightbox__container__right">
+                    <a id="next1" href="#galeria2"><i class="bi bi-arrow-right-square-fill"></i></a>
                 </div>
             </div>
+        </section>
+        <section id="galeria2" class="lightbox">
+            <div class="lightbox__container">
+                <div class="lightbox__container__close">
+                    <a href="#galeria"><i class="bi bi-x-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__left">
+                    <a id="prev2" href="#galeria1"><i class="bi bi-arrow-left-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__img">
+                    <div class="lightbox__container__img__main">
+                        <img id="main2" class="mainImage" src="./proyectos/proyecto02.webp" alt="Proyecto Quark">
+                    </div>
+                    <div class="lightbox__container__img__gallery">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-01.webp')" src="./proyectos/proyecto02-01.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-02.webp')" src="./proyectos/proyecto02-02.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-03.webp')" src="./proyectos/proyecto02-03.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-04.webp')" src="./proyectos/proyecto02-04.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-05.webp')" src="./proyectos/proyecto02-05.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-06.webp')" src="./proyectos/proyecto02-06.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-07.webp')" src="./proyectos/proyecto02-07.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-08.webp')" src="./proyectos/proyecto02-08.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-09.webp')" src="./proyectos/proyecto02-09.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-10.webp')" src="./proyectos/proyecto02-10.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02-11.webp')" src="./proyectos/proyecto02-11.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen2('./proyectos/proyecto02.webp')" src="./proyectos/proyecto02.webp" alt="Proyecto Quark">
+
+                    </div>
+                </div>
+                <div class="lightbox__container__right">
+                    <a id="next2" href="#galeria3"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="galeria3" class="lightbox">
+            <div class="lightbox__container">
+                <div class="lightbox__container__close">
+                    <a href="#galeria"><i class="bi bi-x-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__left">
+                    <a class="prev3" href="#galeria2"><i class="bi bi-arrow-left-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__img">
+                    <div class="lightbox__container__img__main">
+                        <img id="main3" class="mainImage" src="./proyectos/proyecto03.webp" alt="Proyecto Quark">
+                    </div>
+                    <div class="lightbox__container__img__gallery">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-01.webp')" src="./proyectos/proyecto03-01.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-02.webp')" src="./proyectos/proyecto03-02.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-03.webp')" src="./proyectos/proyecto03-03.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-04.webp')" src="./proyectos/proyecto03-04.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-05.webp')" src="./proyectos/proyecto03-05.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-06.webp')" src="./proyectos/proyecto03-06.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-07.webp')" src="./proyectos/proyecto03-07.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-08.webp')" src="./proyectos/proyecto03-08.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03-09.webp')" src="./proyectos/proyecto03-09.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen3('./proyectos/proyecto03.webp')" src="./proyectos/proyecto03.webp" alt="Proyecto Quark">
+                    </div>
+                </div>
+                <div class="lightbox__container__right">
+                    <a id="next3" href="#galeria4"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="galeria4" class="lightbox">
+            <div class="lightbox__container">
+                <div class="lightbox__container__close">
+                    <a href="#galeria"><i class="bi bi-x-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__left">
+                    <a id="prev4" href="#galeria3"><i class="bi bi-arrow-left-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__img">
+                    <div class="lightbox__container__img__main">
+                        <img id="main4" class="mainImage" src="./proyectos/proyecto04.webp" alt="Proyecto Quark">
+                    </div>
+                    <div class="lightbox__container__img__gallery">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-01.webp')" src="./proyectos/proyecto04-01.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-02.webp')" src="./proyectos/proyecto04-02.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-03.webp')" src="./proyectos/proyecto04-03.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-04.webp')" src="./proyectos/proyecto04-04.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-05.webp')" src="./proyectos/proyecto04-05.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-06.webp')" src="./proyectos/proyecto04-06.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-07.webp')" src="./proyectos/proyecto04-07.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-08.webp')" src="./proyectos/proyecto04-08.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-09.webp')" src="./proyectos/proyecto04-09.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-10.webp')" src="./proyectos/proyecto04-10.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04-11.webp')" src="./proyectos/proyecto04-11.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen4('./proyectos/proyecto04.webp')" src="./proyectos/proyecto04.webp" alt="Proyecto Quark">
+                    </div>
+                </div>
+                <div class="lightbox__container__right">
+                    <a id="next4" href="#galeria5"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="galeria5" class="lightbox">
+            <div class="lightbox__container">
+                <div class="lightbox__container__close">
+                    <a href="#galeria"><i class="bi bi-x-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__left">
+                    <a id="prev5" href="#galeria4"><i class="bi bi-arrow-left-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__img">
+                    <div class="lightbox__container__img__main">
+                        <img id="main5" class="mainImage" src="./proyectos/proyecto05.webp" alt="Proyecto Quark">
+                    </div>
+                    <div class="lightbox__container__img__gallery">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-01.webp')" src="./proyectos/proyecto05-01.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-02.webp')" src="./proyectos/proyecto05-02.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-03.webp')" src="./proyectos/proyecto05-03.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-04.webp')" src="./proyectos/proyecto05-04.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-05.webp')" src="./proyectos/proyecto05-05.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-06.webp')" src="./proyectos/proyecto05-06.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-07.webp')" src="./proyectos/proyecto05-07.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-08.webp')" src="./proyectos/proyecto05-08.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-09.webp')" src="./proyectos/proyecto05-09.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05-10.webp')" src="./proyectos/proyecto05-10.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen5('./proyectos/proyecto05.webp')" src="./proyectos/proyecto05.webp" alt="Proyecto Quark">
+
+                    </div>
+                </div>
+                <div class="lightbox__container__right">
+                    <a id="next5" href="#galeria6"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="galeria6" class="lightbox">
+            <div class="lightbox__container">
+                <div class="lightbox__container__close">
+                    <a href="#galeria"><i class="bi bi-x-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__left">
+                    <a id="prev6" href="#galeria5"><i class="bi bi-arrow-left-square-fill"></i></a>
+                </div>
+                <div class="lightbox__container__img">
+                    <div class="lightbox__container__img__main">
+                        <img id="main6" class="mainImage" src="./proyectos/proyecto06.webp" alt="Proyecto Quark">
+                    </div>
+                    <div class="lightbox__container__img__gallery">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-01.webp')" src="./proyectos/proyecto06-01.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-02.webp')" src="./proyectos/proyecto06-02.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-03.webp')" src="./proyectos/proyecto06-03.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-04.webp')" src="./proyectos/proyecto06-04.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-05.webp')" src="./proyectos/proyecto06-05.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-06.webp')" src="./proyectos/proyecto06-06.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-07.webp')" src="./proyectos/proyecto06-07.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-08.webp')" src="./proyectos/proyecto06-08.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-09.webp')" src="./proyectos/proyecto06-09.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06-10.webp')" src="./proyectos/proyecto06-10.webp" alt="Proyecto Quark">
+                        <img onclick="cambiarImagen6('./proyectos/proyecto06.webp')" src="./proyectos/proyecto06.webp" alt="Proyecto Quark">
+
+                    </div>
+                </div>
+                <div class="lightbox__container__right">
+                    <a id="next6" href="#galeria1"><i class="bi bi-arrow-right-square-fill"></i></a>
+                </div>
+            </div>
+        </section>
+
+
         </section>
         <section class="clientes">
             <div class="clientes__title">
@@ -331,7 +521,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <div class="contacto__title">
                 <h2>CONTACTO</h2>
             </div>
@@ -367,6 +557,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script defer src="./js/lightBox.js"></script>
 </body>
 
 </html>
