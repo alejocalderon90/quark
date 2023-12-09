@@ -5,7 +5,7 @@
 
 .header {
     width: 100%;
-    height: 150px;
+    height: 250px;
     padding: 0 50px 0 50px;
     position: fixed;
     z-index: 1000;
@@ -19,11 +19,13 @@
 
         &__logo {
             height: 100%;
-            width: 20%;
+            width: 30%;
+            padding-top: 20px;
         }
 
         &__ul {
             width: 65%;
+            padding-top: 110px;
             @include flex (flex, row, wrap, space-around, center);
 
             &__li {
@@ -56,7 +58,7 @@
 }
 
 .carousel {
-    padding-top: 130px;
+    padding-top: 125px;
 }
 
 .carousel-caption {
@@ -77,17 +79,17 @@
 
 .servicios {
     height: 100%;
-    padding: 100px 80px 150px;
-    @include flex (flex, column, wrap, center, center);
+    padding: 100px 0;
     width: 100%;
 
     &__title {
         width: 100%;
         text-align: center;
-        @include flex (flex, row, wrap, center, center);
+        position: absolute;
+        top: 595px;
 
         h1 {
-            font-size: 11rem;
+            font-size: $title_size;
             font-weight: bolder;
             color: $cl__title1;
             font-family: $title_font;
@@ -99,16 +101,17 @@
 
     &__inner {
         width: 100%;
-        @include flex(flex, row, wrap, center, center);
+        @include flex(flex, row, nowrap, space-around, flex-start);
+        padding: 150px 30px 0;
 
         &__each {
-            width: 50%;
+            width: 45%;
             height: 100%;
-            border-right: 2px solid $cl_quark;
+            padding-left: 30px;
             @include flex(flex, column, wrap, flex-start, flex-start);
 
             &__flex {
-                @include flex(flex, row, wrap, center, flex-start);
+                @include flex(flex, row, wrap, flex-end, flex-start);
                 padding-bottom: 20px;
                 width: 100%;
 
@@ -118,11 +121,10 @@
                     border-radius: 50%;
                     border: 2px solid $cl_quark;
                     margin-right: 10px;
-                    margin-top: 8px;
                 }
 
                 p {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     color: rgb(45, 45, 45);
                     font-weight: 600;
                     font-family: $title_font;
@@ -130,53 +132,57 @@
                     width: 80%;
                 }
             }
-
         }
-
+        &__divider{
+            width: 2px;
+            height: 250px;
+            background: $cl_quark;
+        }
         &__text {
-            width: 50%;
+            width: 45%;
             height: 100%;
-            font-size: 1.5rem;
-            padding-left: 40px;
+            font-size: 1rem;
+            @include flex(flex, column, wrap, flex-start, flex-start);
 
             p {
-                font-weight: 600;
+                padding-bottom: 20px;
+                
             }
+            
         }
     }
-}
-
-#nosotras {
-    height: 100px;
 }
 
 .nosotras {
     background-image: url(../nosotras/nosotras2.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 1000px;
+    background-position: bottom;
+    height: 770px;
+    padding-right: 5px;
 
     &__title {
         width: 100%;
         text-align: center;
         @include flex (flex, column, wrap, center, center);
+        position: absolute;
+        top: 1200px;
 
         h2 {
             font-family: $title_font;
-            font-size: 11rem;
+            font-size: $title_size;
             color: $cl__title2;
             font-weight: bolder;
         }
     }
 
     &__box {
-        height: 70%;
+        height: 78%;
         width: 400px;
         background: rgba(255, 255, 255, 0.763);
         float: right;
-        margin-right: 5px;
         padding: 20px;
+        margin-top: 158px;
 
         &__text {
             text-align: center;
@@ -193,8 +199,8 @@
 
             &__inner {
                 font-size: 1.2rem;
-                padding: 0 20px 0 20px;
-                font-weight: bold;
+                padding: 30px 20px 0 20px;
+                font-weight: light;
             }
         }
     }
@@ -211,7 +217,7 @@
 
         h2 {
             font-family: $title_font;
-            font-size: 7rem;
+            font-size: 8rem;
             color: rgba(105, 105, 105, 0.392);
             font-weight: bolder;
         }
@@ -223,7 +229,7 @@
         @include flex(flex, row, wrap, space-around, baseline);
 
         &__each {
-            width: 35%;
+            width: 45%;
             padding: 20px;
             text-align: center;
             @include flex(flex, row, wrap, center, center);
@@ -249,19 +255,24 @@
                 }
             }
 
-            &__p1 {
+            &__p {
                 width: 100%;
-                text-align: center;
-                font-size: 3rem;
-                font-weight: bolder;
-                font-family: $title_font;
-                letter-spacing: 2px;
-            }
+                @include flex(flex, column, wrap, center, center);
 
-            &__p2 {
-                width: 100%;
-                font-weight: bold;
-                text-align: center;
+                &__p1 {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 3rem;
+                    font-weight: bolder;
+                    font-family: $title_font;
+                    letter-spacing: 2px;
+                }
+
+                &__p2 {
+                    width: 100%;
+                    font-weight: bold;
+                    text-align: center;
+                }
             }
         }
     }
@@ -412,7 +423,7 @@
                     border: 1px white solid;
                     cursor: pointer;
                     object-fit: cover;
-                    
+
 
                     &:hover {
                         filter: blur(1px);
@@ -571,7 +582,7 @@
     width: 100%;
     height: 100%;
     padding-bottom: 100px;
-    @include flex(flex, column, wrap, center, center);
+    // @include flex(flex, column, wrap, center, center);
 
     &__title {
         width: 100%;
@@ -658,4 +669,38 @@
     }
 }
 
-@media screen and (max-width: 1075px) {}
+@media screen and (min-width: 1433px) {
+    .header{
+        height: 250px;
+    }
+    .servicios{
+        padding-top: 200px;
+        &__title{
+
+            h1{
+                font-size: 15rem;
+            }
+        }
+    }
+    .nosotras{
+        padding-top: 100px;
+        &__title{
+
+            h2{
+                font-size: 15rem;
+            }
+        }
+    }
+    .politicas{
+
+        &__title{
+
+            h2{
+                font-size: 12rem;
+            }
+        }
+    }
+    .proyectos{
+        padding-top: 200px;
+    }
+}
