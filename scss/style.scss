@@ -37,6 +37,11 @@
                     font-weight: 600;
                     font-size: 1.2rem;
                     color: $cl__menu;
+
+                    &:hover {
+                        color: $cl_quark;
+                        transition: all .3s ease;
+                    }
                 }
             }
         }
@@ -86,7 +91,8 @@
         width: 100%;
         text-align: center;
         position: absolute;
-        top: 595px;
+        top: 600px;
+        @include flex(flex, column, wrap, center, center);
 
         h1 {
             font-size: $title_size;
@@ -126,18 +132,20 @@
                 p {
                     font-size: 1rem;
                     color: rgb(45, 45, 45);
-                    font-weight: 600;
+                    font-weight: 400;
                     font-family: $title_font;
                     margin: 0;
                     width: 80%;
                 }
             }
         }
-        &__divider{
+
+        &__divider {
             width: 2px;
             height: 250px;
             background: $cl_quark;
         }
+
         &__text {
             width: 45%;
             height: 100%;
@@ -146,9 +154,9 @@
 
             p {
                 padding-bottom: 20px;
-                
+
             }
-            
+
         }
     }
 }
@@ -158,7 +166,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 770px;
+    height: 780px;
     padding-right: 5px;
 
     &__title {
@@ -214,11 +222,13 @@
         width: 100%;
         text-align: center;
         @include flex (flex, column, wrap, center, center);
+        position: absolute;
+        top: 2015px;
 
         h2 {
             font-family: $title_font;
-            font-size: 8rem;
-            color: rgba(105, 105, 105, 0.392);
+            font-size: 7.5rem;
+            color: $cl__title1;
             font-weight: bolder;
         }
     }
@@ -230,17 +240,17 @@
 
         &__each {
             width: 45%;
-            padding: 20px;
+            padding: 40px;
             text-align: center;
             @include flex(flex, row, wrap, center, center);
 
             &__div {
                 width: 100%;
                 height: 140px;
-                @include flex(flex, row, wrap, space-between, center);
+                @include flex(flex, row, wrap, space-around, center);
 
                 &__span {
-                    width: 40%;
+                    width: 35%;
                     height: 50px;
                     border-bottom: 5px solid $cl_quark;
                 }
@@ -248,7 +258,7 @@
                 &__num {
                     width: 40%;
                     font-size: 7rem;
-                    color: rgba(105, 105, 105, 0.392);
+                    color: $cl__title1;
                     font-weight: bolder;
                     font-family: $title_font;
                     text-align: center;
@@ -258,10 +268,11 @@
             &__p {
                 width: 100%;
                 @include flex(flex, column, wrap, center, center);
+                padding: 0 30px;
 
                 &__p1 {
                     width: 100%;
-                    text-align: center;
+                    text-align: left;
                     font-size: 3rem;
                     font-weight: bolder;
                     font-family: $title_font;
@@ -270,8 +281,8 @@
 
                 &__p2 {
                     width: 100%;
-                    font-weight: bold;
-                    text-align: center;
+                    text-align: left;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -281,18 +292,19 @@
 .proyectos {
     width: 100%;
     height: 100%;
-    padding-top: 100px;
 
     &__title {
         width: 100%;
         text-align: center;
         font-family: $title_font;
         @include flex (flex, column, wrap, center, center);
+        position: absolute;
+        top: 2910px;
 
         h2 {
-            font-size: 10rem;
+            font-size: 13rem;
             font-weight: bolder;
-            color: $cl__title1;
+            color: $cl__title2;
         }
     }
 
@@ -423,12 +435,6 @@
                     border: 1px white solid;
                     cursor: pointer;
                     object-fit: cover;
-
-
-                    &:hover {
-                        filter: blur(1px);
-                        transition: all .3s ease;
-                    }
                 }
             }
         }
@@ -458,17 +464,19 @@
     height: 100%;
     text-align: center;
     background-color: $cl_quark;
+    padding-top: 100px;
 
     &__title {
         width: 100%;
         @include flex (flex, column, wrap, center, center);
+        position: absolute;
+        top: 4145px;
 
         h2 {
             font-family: $title_font;
             font-weight: bolder;
             color: rgba(255, 255, 255, 0.21);
-            ;
-            font-size: 6rem;
+            font-size: 7.5rem;
         }
     }
 
@@ -491,7 +499,7 @@
 
         &__1 {
             height: 100%;
-            width: 40%;
+            width: 30%;
             text-align: left;
             @include flex(flex, row, wrap, center, center);
 
@@ -503,6 +511,7 @@
                 &__title {
                     width: 100%;
                     @include flex(flex, row, wrap, flex-start, center);
+                    padding-bottom: 20px;
 
                     h4 {
                         color: white;
@@ -514,19 +523,21 @@
 
                 &__parrafo {
                     padding-bottom: 20px;
-                    font-weight: bold;
+                    font-size: small;
+                    width: 100%;
                 }
 
                 &__white {
                     color: white;
-                    font-weight: bold;
+                    width: 100%;
+                    font-size: small;
                 }
             }
         }
 
         &__2 {
             height: 100%;
-            width: 40%;
+            width: 30%;
             text-align: left;
             @include flex(flex, row, wrap, center, center);
 
@@ -539,6 +550,7 @@
                 &__title {
                     width: 100%;
                     @include flex(flex, row, wrap, flex-start, center);
+                    padding-bottom: 20px;
 
                     h4 {
                         color: white;
@@ -550,12 +562,14 @@
 
                 &__parrafo {
                     padding-bottom: 20px;
-                    font-weight: bold;
+                    font-size: small;
+                    width: 100%;
                 }
 
                 &__white {
                     color: white;
-                    font-weight: bold;
+                    width: 100%;
+                    font-size: small;
                 }
             }
         }
@@ -582,17 +596,19 @@
     width: 100%;
     height: 100%;
     padding-bottom: 100px;
-    // @include flex(flex, column, wrap, center, center);
+    padding-top: 250px;
 
     &__title {
         width: 100%;
         text-align: center;
         @include flex (flex, column, wrap, center, center);
+        position: absolute;
+        top: 5110px;
 
         h2 {
             color: $cl__title1;
             font-family: $title_font;
-            font-size: 12rem;
+            font-size: 14.5rem;
             font-weight: bolder;
         }
     }
@@ -619,9 +635,14 @@
 
                 a {
                     width: 100%;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: bold;
                     color: $cl__menu;
+
+                    &:hover {
+                        opacity: 0.5;
+                        transition: all .3s ease;
+                    }
                 }
             }
         }
@@ -647,9 +668,14 @@
 
                 a {
                     width: 100%;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: bold;
                     color: $cl__menu;
+
+                    &:hover {
+                        opacity: 0.5;
+                        transition: all .3s ease;
+                    }
                 }
             }
         }
@@ -669,23 +695,28 @@
     }
 }
 
+/*
 @media screen and (min-width: 1433px) {
     .header{
         height: 250px;
     }
+    .header__nav__logo{
+        width: 20%;
+    }
     .servicios{
-        padding-top: 200px;
-        &__title{
 
+        &__title{
+            top: 850px;
             h1{
                 font-size: 15rem;
             }
         }
     }
     .nosotras{
-        padding-top: 100px;
+        background-position: center;
+        height: 850px;
         &__title{
-
+            top: 1450px;
             h2{
                 font-size: 15rem;
             }
@@ -694,7 +725,7 @@
     .politicas{
 
         &__title{
-
+            top: 2310px;
             h2{
                 font-size: 12rem;
             }
@@ -704,3 +735,296 @@
         padding-top: 200px;
     }
 }
+*/
+@media screen and (max-width:580px) {
+    .header {
+        padding: 0;
+        height: 25%;
+
+        &__nav {
+            justify-content: space-around;
+
+            &__logo {
+                width: 50%;
+                height: 100%;
+                padding: 0;
+            }
+
+            &__ul {
+                display: none;
+            }
+        }
+    }
+
+    .navbar {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .carousel {
+        padding-top: 120px;
+    }
+
+    .carousel-caption {
+        padding-top: 40px;
+        font-size: 1rem;
+    }
+
+    .servicios {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &__title {
+            position: static;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        &__inner {
+            padding: 0;
+
+            &__each {
+                padding-left: 0;
+
+                &__flex {
+
+                    p {
+                        font-size: small;
+                    }
+
+                    span {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            &__divider {
+                height: 380px;
+            }
+
+            &__text {
+
+                p {
+                    font-size: small;
+                }
+            }
+        }
+    }
+
+    .nosotras {
+        background-position: center center;
+        height: 750px;
+
+        &__title {
+            position: static;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        &__box {
+            margin: 0;
+            width: 50%;
+            height: 60%;
+            padding: 5px;
+
+            &__text {
+
+                &__title {
+
+                    p {
+                        font-size: medium;
+                    }
+                }
+
+                &__inner {
+                    padding: 20px 5px;
+
+                    p {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
+
+    .politicas__title {
+        position: static;
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .politicas__box {
+        padding: 0;
+        flex-direction: column;
+
+        &__each {
+            width: 100%;
+        }
+    }
+
+    .politicas__box__each__div__num {
+        font-size: 5rem;
+    }
+
+    .politicas__box__each__p {
+        padding: 0;
+
+        &__p1 {
+            letter-spacing: 0;
+            font-size: 2rem;
+        }
+
+        br {
+            display: none;
+        }
+    }
+
+    .proyectos__title {
+        position: static;
+
+        h2 {
+            font-size: 3rem;
+            color: rgba(128, 128, 128, 0.381);
+        }
+    }
+    .proyectos__gallery{
+        grid-template-rows: repeat(8, 75px);
+    }
+    .lightbox__container{
+        height: 50%;
+    }
+    .lightbox__container__img{
+        width: 85%;
+    }
+    .bi{
+        font-size: 1rem;
+    }
+
+    .clientes {
+        padding-top: 0;
+
+        &__title {
+            position: static;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        &__container {
+            padding: 20px 0;
+            @include flex(flex, column, nowrap, center, center);
+
+            &__1 {
+                width: 90%;
+                padding-bottom: 20px;
+            }
+
+            &__2 {
+                width: 90%;
+            }
+        }
+    }
+
+    .clientes__subtitle {
+        @include flex(flex, column, wrap, center, center);
+
+        h3 {
+            font-size: 2rem;
+            letter-spacing: 10px;
+        }
+    }
+
+    .contacto {
+        padding-top: 0;
+
+        &__title {
+            position: static;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        &__cards {
+            @include flex (flex, column, nowrap, space-evenly, flex-start);
+            text-align: left;
+
+            &__container {
+                width: 100%;
+                padding: 20px 0 20px 0;
+            }
+
+            &__middle {
+                width: 100%;
+                padding: 20px 10px 20px 0;
+                border: none;
+
+                &__align {
+                    padding: 0;
+
+                }
+            }
+        }
+
+    }
+    .ig{
+        padding-right: 35px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .header__nav__logo{
+        width: 70%;
+    }
+    .carousel{
+        padding-top: 100px;
+    }
+
+}
+@media screen and (max-width:355px) {
+    .servicios__title{
+
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .nosotras__title{
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .politicas__title{
+
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .proyectos__title{
+
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .clientes__title{
+        
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .contacto__title{
+        
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+
