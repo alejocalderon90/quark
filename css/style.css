@@ -62,6 +62,9 @@ p {
 .navbar {
   display: none; }
 
+.bg-body-tertiary {
+  background-color: white !important; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -641,47 +644,70 @@ p {
   .footer__c {
     font-weight: bolder; }
 
-/*
-@media screen and (min-width: 1433px) {
-    .header{
-        height: 250px;
-    }
-    .header__nav__logo{
-        width: 20%;
-    }
-    .servicios{
+@media screen and (max-width: 1433px) {
+  .header {
+    height: 250px; }
+  .header__nav__logo {
+    width: 20%; }
+  .servicios__title {
+    top: 600px; }
+    .servicios__title h1 {
+      font-size: 14.5rem; }
+  .nosotras {
+    background-position: center;
+    height: 850px; }
+    .nosotras__title {
+      top: 1210px; }
+      .nosotras__title h2 {
+        font-size: 14.5rem; }
+    .nosotras__box {
+      margin-top: 170px; }
+  .politicas__title {
+    top: 2100px; }
+    .politicas__title h2 {
+      font-size: 7.3rem; }
+  .proyectos__title {
+    top: 3010px; }
+    .proyectos__title h2 {
+      font-size: 13rem; }
+  .clientes__title {
+    top: 4250px; }
+  .contacto__title {
+    top: 5200px; } }
 
-        &__title{
-            top: 850px;
-            h1{
-                font-size: 15rem;
-            }
-        }
-    }
-    .nosotras{
-        background-position: center;
-        height: 850px;
-        &__title{
-            top: 1450px;
-            h2{
-                font-size: 15rem;
-            }
-        }
-    }
-    .politicas{
+@media screen and (max-width: 1024px) {
+  .header__nav__logo {
+    width: 35%; }
+  .servicios__title {
+    top: 530px; }
+    .servicios__title h1 {
+      font-size: 10rem; }
+  .nosotras {
+    background-position: center;
+    height: 800px; }
+    .nosotras__title {
+      top: 1190px; }
+      .nosotras__title h2 {
+        font-size: 10rem; }
+    .nosotras__box {
+      margin-top: 150px; }
+  .politicas__title {
+    top: 2000px; }
+    .politicas__title h2 {
+      font-size: 5rem; }
+  .proyectos__title {
+    top: 3040px; }
+    .proyectos__title h2 {
+      font-size: 9rem; }
+  .clientes__title {
+    top: 4270px; }
+    .clientes__title h2 {
+      font-size: 5rem; }
+  .contacto__title {
+    top: 5380px; }
+    .contacto__title h2 {
+      font-size: 10rem; } }
 
-        &__title{
-            top: 2310px;
-            h2{
-                font-size: 12rem;
-            }
-        }
-    }
-    .proyectos{
-        padding-top: 200px;
-    }
-}
-*/
 @media screen and (max-width: 580px) {
   .header {
     padding: 0;
@@ -689,7 +715,7 @@ p {
     .header__nav {
       justify-content: space-around; }
       .header__nav__logo {
-        width: 50%;
+        width: 60%;
         height: 100%;
         padding: 0; }
       .header__nav__ul {
@@ -708,7 +734,7 @@ p {
     .servicios__title {
       position: static; }
       .servicios__title h1 {
-        font-size: 3rem; }
+        font-size: 4rem; }
     .servicios__inner {
       padding: 0; }
       .servicios__inner__each {
@@ -723,12 +749,13 @@ p {
       .servicios__inner__text p {
         font-size: small; }
   .nosotras {
+    background-image: url(../nosotras/nosotras-query.webp);
     background-position: center center;
     height: 750px; }
     .nosotras__title {
       position: static; }
       .nosotras__title h2 {
-        font-size: 3rem; }
+        font-size: 4rem; }
     .nosotras__box {
       margin: 0;
       width: 50%;
@@ -743,7 +770,7 @@ p {
   .politicas__title {
     position: static; }
     .politicas__title h2 {
-      font-size: 3rem; }
+      font-size: 3.2rem; }
   .politicas__box {
     padding: 0;
     flex-direction: column; }
@@ -759,9 +786,9 @@ p {
     .politicas__box__each__p br {
       display: none; }
   .proyectos__title {
-    position: static; }
+    top: 3010px; }
     .proyectos__title h2 {
-      font-size: 3rem;
+      font-size: 4rem;
       color: rgba(128, 128, 128, 0.381); }
   .proyectos__gallery {
     grid-template-rows: repeat(8, 75px); }
@@ -826,19 +853,43 @@ p {
 @media screen and (max-width: 450px) {
   .header__nav__logo {
     width: 70%; }
+  .servicios__title h1 {
+    font-size: 3rem; }
+  .proyectos__title {
+    position: absolute;
+    top: 3000px; }
   .carousel {
-    padding-top: 100px; } }
+    padding-top: 100px; }
+  .nosotras__box {
+    height: 70%; } }
 
 @media screen and (max-width: 355px) {
-  .servicios__title h2 {
+  .header {
+    height: 20%; }
+  .header__nav__logo {
+    height: 85%; }
+  .servicios {
+    padding-bottom: 30px; }
+  .servicios__title h1 {
     font-size: 2rem; }
   .nosotras__title h2 {
-    font-size: 2rem; }
+    font-size: 3rem; }
+  .nosotras__box {
+    height: 85%; }
   .politicas__title h2 {
-    font-size: 2rem; }
-  .proyectos__title h2 {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
+  .proyectos__title {
+    position: absolute;
+    top: 3090px; }
+    .proyectos__title h2 {
+      font-size: 3rem; }
   .clientes__title h2 {
-    font-size: 2rem; }
+    font-size: 3rem; }
+  .clientes__subtitle h3 {
+    font-size: 1.5rem; }
+  .clientes__container__1__testimonio__title h4 {
+    font-size: 1.2rem; }
+  .clientes__container__2__testimonio__title h4 {
+    font-size: 1.2rem; }
   .contacto__title h2 {
-    font-size: 2rem; } }
+    font-size: 3rem; } }
