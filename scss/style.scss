@@ -12,6 +12,7 @@
     top: 0;
     background: white;
 
+
     &__nav {
         width: 100%;
         height: 100%;
@@ -289,7 +290,7 @@
 .proyectos {
     width: 100%;
     height: 100%;
-    padding-top: 200px;
+    padding-top: 150px;
 
     &__title {
         width: 100%;
@@ -898,7 +899,7 @@
     }
 
     .header__nav__logo {
-        height: 70%;
+        width: 30%;
     }
 
     .header__nav__ul {
@@ -1028,6 +1029,7 @@
 
         &__nav {
             justify-content: flex-start;
+            flex-wrap: nowrap;
             width: 60%;
             padding-top: 20px;
 
@@ -1061,14 +1063,14 @@
         }
     }
     .nosotras__title{
-        top: 1800px;
+        top: 1750px;
         h1{
             font-size: 8.5rem;
         }
     }
 
     .proyectos__title {
-        top: 170px;
+        top: 120px;
         h2 {
             font-size: 8.5rem;
         }
@@ -1112,13 +1114,16 @@
     }
 
     .nosotras__title{
-        top: 1390px;
+        top: 1320px;
         h1{
             font-size: 8rem;
         }
     }
-    
+    .proyectos{
+        padding-top: 130px;
+    }
     .proyectos__title{
+        top: 100px;
         h2{
             font-size: 8rem;
         }
@@ -1180,11 +1185,16 @@
         }
     }
     .nosotras__title{
+        top: 1290px;
         h1{
             font-size: 7.5rem;
         }
     }
+    .proyectos{
+        padding-top: 110px;
+    }
     .proyectos__title {
+        top: 80px;
         h2{
             font-size: 7rem;
         }
@@ -1194,11 +1204,6 @@
         font-size: 5rem;
     }
 
-}
-@media screen and (max-width:747px) {
-    .nosotras__title{
-        top: 1380px;
-    }
 }
 @media screen and (max-width: 711px) {
 
@@ -1284,17 +1289,22 @@
 
         &__nav__logo{
             height: 100%;
-            width: 60%;
+            width: 50%;
+            margin-left: 20px;
         }
     }
     .navbar{
         width: 30%;
     }
-    
+    .proyectos__title{
+        top: 120px;
+    }
     .nosotras{
         padding-top: 440px;
     }
-    
+    .nosotras__title{
+        top: 1300px;
+    }
     .nosotras__box{
         width: 90%;
         height: 290px;
@@ -1304,6 +1314,9 @@
     }
 }
 @media screen and (max-width: 640px) {
+    .nosotras__title{
+        top: 1280px;
+    }
     .servicios__inner__each__flex{
         width: 100%;
     }
@@ -1314,13 +1327,16 @@
         font-size: 1rem;
     }
 }
-@media screen and (max-width:598px) {
+@media screen and(max-width:607px) {
     .proyectos__title{
-        top: 180px;
+
         h2{
             font-size: 5.5rem;
         }
     }
+}
+@media screen and (max-width:598px) {
+    
     .servicios {
         padding-top: 0;
         padding-bottom: 0;
@@ -1359,7 +1375,7 @@
         }
     }
     .nosotras__title{
-        top: 1340px;
+        top: 1240px;
         h1{
             font-size: 6rem;
         }
@@ -1368,7 +1384,7 @@
 @media screen and (max-width:580px) {
     
     .nosotras__title{
-        top: 1140px;
+        top: 1040px;
         h1{
             font-size: 6rem;
         }
@@ -1409,7 +1425,7 @@
     }
 
     .proyectos__title {
-
+        top: 130px;
         h2 {
             font-size: 5rem;
             color: $cl__title2;
@@ -1481,7 +1497,7 @@
 
 @media screen and(max-width:525px){
     .nosotras__title{
-        top: 1130px;
+        top: 1040px;
         h1{
             font-size: 5rem;
         }
@@ -1500,6 +1516,12 @@
         }
     }
 }
+@media screen and(max-width:514px) {
+    .header__nav__logo{
+        width: 60%;
+        margin-left: 5px;
+    }
+}
 @media screen and (max-width:511px) {
     .nosotras__box{
         height: 320px;
@@ -1511,7 +1533,7 @@
         width: 80%;
     }
     .nosotras__title{
-        top: 1180px;
+        top: 1090px;
     }
 }
 @media screen and (max-width:490px) {
@@ -1523,9 +1545,6 @@
     .politicas__box__each__div__num {
         font-size: 4rem;
     }
-    .nosotras__title{
-        top: 1170px ;
-    }
 }
 @media screen and (max-width: 472px) {
     .header__nav__logo{
@@ -1535,13 +1554,13 @@
 
 @media screen and(max-width: 468px) {
     .proyectos__title{
-        top: 190px;
+        top: 135px;
         h2{
             font-size: 4rem;
         }
     }
     .nosotras__title{
-        top: 1190px;
+        top: 1100px;
         h1{
             font-size: 4.5rem;
         }
@@ -1586,13 +1605,17 @@
     
 }
 @media screen and(max-width:365px) {
+    .header__nav__logo{
+        width: 80%;
+        margin-left: 0;
+    }
     .servicios__inner{
         width: 95%;
     }
 }
 @media screen and (max-width:355px) {
     .nosotras__title{
-        top: 985px;
+        top: 900px;
         h1{
             font-size: 3.5rem;
         }
