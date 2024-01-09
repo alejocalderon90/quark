@@ -616,7 +616,7 @@ p {
       margin-top: 300px;
       height: 60%; }
   .nosotras__title {
-    top: 3250px; }
+    top: 3160px; }
     .nosotras__title h1 {
       font-size: 22rem; }
   .nosotras {
@@ -632,7 +632,7 @@ p {
 
 @media screen and (max-width: 2046px) {
   .nosotras__title {
-    top: 3250px; }
+    top: 3160px; }
     .nosotras__title h1 {
       font-size: 20rem; }
   .proyectos__title {
@@ -642,7 +642,7 @@ p {
 
 @media screen and (max-width: 1910px) {
   .nosotras__title {
-    top: 3200px; }
+    top: 3140px; }
     .nosotras__title h1 {
       font-size: 19rem; }
   .proyectos__title {
@@ -660,7 +660,7 @@ p {
 
 @media screen and (max-width: 1740px) {
   .nosotras__title {
-    top: 3200px; }
+    top: 3130px; }
     .nosotras__title h1 {
       font-size: 17rem; }
   .proyectos__title {
@@ -680,7 +680,7 @@ p {
   .header__nav__logo {
     width: 20%; }
   .nosotras__title {
-    top: 3180px; }
+    top: 3120px; }
     .nosotras__title h1 {
       font-size: 15rem; }
   .proyectos__title {
@@ -690,7 +690,7 @@ p {
 
 @media screen and (max-width: 1400px) {
   .nosotras__title {
-    top: 1980px; }
+    top: 1900px; }
     .nosotras__title h1 {
       font-size: 14rem; }
   .proyectos__gallery {
@@ -704,7 +704,7 @@ p {
   .header__nav__logo {
     width: 30%; }
   .nosotras__title {
-    top: 1970px; }
+    top: 1900px; }
     .nosotras__title h1 {
       font-size: 13rem; }
   .proyectos__title {
@@ -714,7 +714,7 @@ p {
 
 @media screen and (max-width: 1244px) {
   .nosotras__title {
-    top: 1970px; }
+    top: 1900px; }
     .nosotras__title h1 {
       font-size: 12rem; }
   .proyectos__title {
@@ -728,7 +728,7 @@ p {
   .servicios__inner__each {
     width: 50%; }
   .nosotras__title {
-    top: 1960px; }
+    top: 1900px; }
     .nosotras__title h1 {
       font-size: 11rem; }
   .nosotras__box {
@@ -739,10 +739,8 @@ p {
       font-size: 10.5rem; } }
 
 @media screen and (max-width: 1082px) {
-  .nosotras__title {
-    top: 1960px; }
-    .nosotras__title h1 {
-      font-size: 10rem; }
+  .nosotras__title h1 {
+    font-size: 10rem; }
   .proyectos__title h2 {
     font-size: 10.5rem; } }
 
@@ -756,10 +754,8 @@ p {
     padding-top: 70px; }
   .servicios__inner {
     padding-top: 150px; }
-  .nosotras__title {
-    top: 1960px; }
-    .nosotras__title h1 {
-      font-size: 11rem; }
+  .nosotras__title h1 {
+    font-size: 11rem; }
   .politicas__box__each__p {
     padding-left: 15px; }
   .proyectos__title {
@@ -779,7 +775,7 @@ p {
     background-position: center;
     padding-top: 500px; }
     .nosotras__title {
-      top: 1950px; }
+      top: 1900px; }
       .nosotras__title h1 {
         font-size: 10rem; }
     .nosotras__box {
@@ -806,7 +802,7 @@ p {
   .servicios__inner__each {
     width: 60%; }
   .nosotras__title {
-    top: 1820px; }
+    top: 1760px; }
   .nosotras__box {
     height: 280px; }
   .clientes {
@@ -817,8 +813,10 @@ p {
 @media screen and (max-width: 921px) {
   .proyectos__title {
     top: 160px; }
-  .nosotras__title h1 {
-    font-size: 9rem; } }
+  .nosotras__title {
+    top: 1760px; }
+    .nosotras__title h1 {
+      font-size: 9rem; } }
 
 @media screen and (max-width: 911px) {
   .header {
