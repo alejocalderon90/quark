@@ -10,7 +10,7 @@
     position: fixed;
     z-index: 1000;
     top: 0;
-    background: white;
+    background: #4a4a4c;
 
 
     &__nav {
@@ -42,7 +42,7 @@
                 a {
                     font-weight: 600;
                     font-size: 1.2rem;
-                    color: $cl__menu;
+                    color: white;
 
                     &:hover {
                         color: $cl_quark;
@@ -56,12 +56,21 @@
 
 .navbar {
     display: none;
-
+}
+.navbar-toggler{
+    color: white;
+    border: white 1px solid;
 }
 
 .bg-body-tertiary {
-    background-color: white !important;
-
+    background-color: #4a4a4c !important;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: $cl_quark;
+    transition: all .3s ease;
 }
 
 @keyframes fadein {
