@@ -1692,50 +1692,64 @@
         }
     }
 }
-
+@media screen and(max-width:327px) {
+    .nosotras__box{
+        height: 250px;
+        margin-top: 760px;
+    }
+    .nosotras__box__text__title p {
+        font-size: 1rem;
+    }
+    .nosotras__box__text__inner p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and(max-width:303px) {
+    .proyectos__title{
+        h2{
+            font-size: 2.5rem;
+        }
+    }
+}
 @media screen and (max-width: 286px) {
+    .header__nav__logo{
+        width: 80%;
+    }
     .servicios__inner__each {
         align-items: flex-start;
     }
     .nosotras__title{
         position: static;
+        h1{
+            font-size: 2.5rem;
+        }
     }
 
-    .nosotras__box__text__title p {
-        font-size: 0.6rem;
-    }
 
     .politicas__box__each__p {
         width: 100%;
     }
 
-    .proyectos__title {
-        top: 3410px;
-    }
 
     .clientes__subtitle h3 {
         letter-spacing: 0;
     }
 }
 
-@media screen and (max-width: 272px) {
-    .carousel-caption {
-        padding-top: 20px;
-    }
-
-    .nosotras {
-        padding-right: 0;
-        &__title{
-            font-size: 2.5rem;
+@media screen and (max-width: 251px) {
+    .proyectos__title{
+        h2{
+            font-size: 2rem;
         }
     }
-
-
-    .proyectos__title {
-        position: static;
-
-        h2 {
-            color: $cl__title1;
+}
+@media screen and(max-width:230px) {
+    .header__nav__logo{
+        height: 80%;
+    }
+    .nosotras__title{
+        h1{
+            font-size: 2rem;
         }
     }
 }
